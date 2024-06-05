@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">  
+    <title>Agenda</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Contatos</h1>
+        </header>
+        <form id="formulario">
+            <input id="nomeContato" type="text" required placeholder="Nome"/>
+            <input id="numeroContato" type="tel" required maxlength="14" placeholder="(99) 99999-9999">
+            <button type="submit" onclick="formatarNumero()">Salvar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th> Nome</th>
+                    <th> Numero</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="linha-contato">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
